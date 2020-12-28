@@ -3,7 +3,7 @@ function add(n1, n2, showResult, resultPhrase) {
     // if (typeof n1 !== 'number' || typeof n2 !== 'number') {
     //   throw new Error('Incorrect input!');
     // }
-    var result = n1 + n2;
+    const result = n1 + n2;
     if (showResult) {
         console.log(resultPhrase + result);
     }
@@ -11,8 +11,8 @@ function add(n1, n2, showResult, resultPhrase) {
         return result;
     }
 }
-var number1 = 5; // 5.0
-var number2 = 2.8;
-var printResult = true;
-var resultPhrase = 'Result is: ';
+let number1 = 5; // 5.0
+const number2 = 2.8;
+const printResult = true;
+const resultPhrase = 'Result is: ';
 add(number1, number2, printResult, resultPhrase);

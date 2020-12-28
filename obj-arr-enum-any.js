@@ -1,7 +1,7 @@
 "use strict";
-var ADMIN = 0;
-var READ_ONLY = 1;
-var AUTHOR = 2;
+const ADMIN = 0;
+const READ_ONLY = 1;
+const AUTHOR = 2;
 var Role;
 (function (Role) {
     Role[Role["ADMIN"] = 0] = "ADMIN";
@@ -14,7 +14,7 @@ var Role;
 //   hobbies: string[];
 //   role: [number, string];
 // } = {
-var person = {
+const person = {
     name: 'Marv',
     age: 27,
     hobbies: ['sports', 'cooking'],
@@ -23,11 +23,10 @@ var person = {
 // person.role.push('admin');
 // person.role[1] = 10;
 // person.role = [0, 'admin', 'user'];
-var favoriteActivities;
+let favoriteActivities;
 favoriteActivities = ['sports', 'cooking'];
 console.log(person.name);
-for (var _i = 0, _a = person.hobbies; _i < _a.length; _i++) {
-    var hobby = _a[_i];
+for (const hobby of person.hobbies) {
     console.log(hobby.toUpperCase());
     // console.log(hobby.map()) // => ERROR!!!
 }
